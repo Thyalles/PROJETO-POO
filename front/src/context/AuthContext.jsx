@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios'; // Importar axios para requisições HTTP
 
 // URL base do seu backend
-const API_URL = "https://projeto-poo-2.onrender.com/login"; // Altere a porta se necessário
+const API_URL = "http://localhost:8080/login"; // Altere a porta se necessário
 
 // Cria o contexto
 const AuthContext = createContext();
@@ -82,3 +82,4 @@ export const useAuth = () => useContext(AuthContext);
 // Export padrão do contexto (opcional, mas útil)
 
 export default AuthContext;
+
