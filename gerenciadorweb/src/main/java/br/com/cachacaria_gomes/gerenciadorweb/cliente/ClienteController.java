@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 
 
 @RestController
-@CrossOrigin(origins = "*")
 @RequestMapping("/clientes")
 public class ClienteController {
 
@@ -56,5 +54,6 @@ public class ClienteController {
     }
 
 }
+
 
 
