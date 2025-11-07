@@ -11,7 +11,7 @@ export default function GestaoClientes() {
   }, []);
 
   const carregarClientes = () => {
-    fetch("http://localhost:8080/clientes/")
+    fetch("https://projeto-poo-2.onrender.com/clientes/")
       .then((res) => res.ok ? res.json() : Promise.reject("Erro ao buscar clientes"))
       .then((data) => setClientes(data))
       .catch((err) => console.error("Erro ao carregar clientes:", err));
@@ -19,7 +19,7 @@ export default function GestaoClientes() {
 
   const deletarCliente = (id) => {
     if (window.confirm("Deseja realmente excluir este cliente?")) {
-      fetch(`http://localhost:8080/clientes/${id}`, { method: "DELETE" })
+      fetch(`https://projeto-poo-2.onrender.com/clientes/${id}`, { method: "DELETE" })
         .then((res) => {
           if (res.ok) {
             alert("Cliente excluído com sucesso!");
@@ -37,7 +37,7 @@ export default function GestaoClientes() {
   };
 
   const salvarEdicao = (clienteAtualizado) => {
-    fetch(`http://localhost:8080/clientes/${clienteAtualizado.id}`, {
+    fetch(`https://projeto-poo-2.onrender.com/clientes/${clienteAtualizado.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(clienteAtualizado),
@@ -69,4 +69,5 @@ export default function GestaoClientes() {
       )}
     </div>
   );
+
 }
