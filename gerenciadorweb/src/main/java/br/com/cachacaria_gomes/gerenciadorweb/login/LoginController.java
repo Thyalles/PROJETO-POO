@@ -11,8 +11,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(origins = "*")
 @RequestMapping("/login")
+@CrossOrigin(origins = "*")
 
 public class LoginController {
 
@@ -37,5 +37,6 @@ public class LoginController {
     }
 
 }
+
 
 
