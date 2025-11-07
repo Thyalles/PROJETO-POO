@@ -1,6 +1,5 @@
 package br.com.cachacaria_gomes.gerenciadorweb.login;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
 import br.com.cachacaria_gomes.gerenciadorweb.cliente.LoginRequest;
 import br.com.cachacaria_gomes.gerenciadorweb.enums.Role;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import java.util.Map;
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("/login")
-@CrossOrigin(origins = "http://localhost:5173") 
+
 public class LoginController {
 
     @Autowired
@@ -38,4 +37,5 @@ public class LoginController {
     }
 
 }
+
 
