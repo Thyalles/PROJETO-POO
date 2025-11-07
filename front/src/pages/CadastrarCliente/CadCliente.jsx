@@ -134,7 +134,7 @@ const validarIdadeMinima = (dataNascimento, idadeMinima = 18) => {
     const { confirmarSenha: _, ...payload } = formData;
     
     try {
-      const res = await fetch("http://localhost:8080/clientes/", { 
+      const res = await fetch("https://projeto-poo-2.onrender.com/clientes/", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -201,5 +201,6 @@ const validarIdadeMinima = (dataNascimento, idadeMinima = 18) => {
     </div>
   );
 }
+
 
 export default CadCliente;
