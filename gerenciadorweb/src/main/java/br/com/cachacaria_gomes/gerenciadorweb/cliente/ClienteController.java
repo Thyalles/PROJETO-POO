@@ -14,6 +14,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/clientes")
 public class ClienteController {
 
@@ -52,4 +53,5 @@ public class ClienteController {
         
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errors.toString());
     }
+
 }
