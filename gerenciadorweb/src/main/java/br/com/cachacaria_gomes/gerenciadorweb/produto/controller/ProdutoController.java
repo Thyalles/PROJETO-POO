@@ -3,6 +3,7 @@ package br.com.cachacaria_gomes.gerenciadorweb.produto.controller;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.beans.factory.annotation.Autowired; // Importante
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -97,3 +98,4 @@ public class ProdutoController {
 
 
 }
+
