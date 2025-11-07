@@ -1,5 +1,6 @@
 package br.com.cachacaria_gomes.gerenciadorweb.login;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import br.com.cachacaria_gomes.gerenciadorweb.cliente.LoginRequest;
 import br.com.cachacaria_gomes.gerenciadorweb.enums.Role;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,3 +38,4 @@ public class LoginController {
     }
 
 }
+
