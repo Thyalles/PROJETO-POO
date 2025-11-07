@@ -41,8 +41,8 @@ function ProdutoModal({ produto, onClose, onSave }) {
     e.preventDefault();
 
     const url = produto?.id
-      ? `http://localhost:8080/produtos/${produto.id}`
-      : "http://localhost:8080/produtos/";
+      ? `https://projeto-poo-2.onrender.com/produtos/${produto.id}`
+      : "https://projeto-poo-2.onrender.com/produtos/";
 
     const method = produto?.id ? "PUT" : "POST";
 
