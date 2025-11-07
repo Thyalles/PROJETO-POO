@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/login")
 @CrossOrigin(origins = "http://localhost:5173") 
 public class LoginController {
@@ -34,4 +35,5 @@ public class LoginController {
                                  .body(Map.of("message", "E-mail/Usuário ou senha inválidos."));
         }
     }
+
 }
