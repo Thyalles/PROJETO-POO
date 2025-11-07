@@ -21,6 +21,7 @@ import br.com.cachacaria_gomes.gerenciadorweb.produto.model.ProdutoModel;
 import br.com.cachacaria_gomes.gerenciadorweb.produto.service.IProdutoService;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/produtos")
 public class ProdutoController {
 
@@ -93,5 +94,6 @@ public class ProdutoController {
         ProdutoModel atualizado = produtoService.salvarProduto(produtoAtualizado);
         return ResponseEntity.ok(atualizado);
     }
+
 
 }
