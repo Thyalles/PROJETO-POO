@@ -14,7 +14,7 @@ function GestaoPedidos() {
   const carregarPedidos = () => {
     setLoading(true);
 
-    fetch("http://localhost:8080/pedidos/")
+    fetch("https://projeto-poo-2.onrender.com/pedidos/")
       .then((res) => res.ok ? res.json() : Promise.reject("Erro ao buscar pedidos"))
       .then((data) => {
         setPedidos(data);
@@ -48,5 +48,6 @@ function GestaoPedidos() {
     </div>
   );
 }
+
 
 export default GestaoPedidos;
