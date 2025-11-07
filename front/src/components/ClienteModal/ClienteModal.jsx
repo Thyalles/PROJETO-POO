@@ -47,8 +47,8 @@ function ClienteModal({ cliente, onClose, onSave }) {
 
 
         const url = cliente?.id
-            ? `http://localhost:8080/clientes/${cliente.id}`
-            : "http://localhost:8080/clientes/";
+            ? `https://projeto-poo-2.onrender.com/clientes/${cliente.id}`
+            : "https://projeto-poo-2.onrender.com/clientes/";
         const method = cliente?.id ? "PUT" : "POST";
 
         const payload = form;
@@ -105,5 +105,6 @@ function ClienteModal({ cliente, onClose, onSave }) {
         </div>
     );
 }
+
 
 export default ClienteModal;
