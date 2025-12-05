@@ -1,4 +1,3 @@
-# language: en
 Feature: Gerenciamento de Favoritos
 
   Scenario: Adicionar produto aos favoritos
